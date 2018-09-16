@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.demo.zxl.user.zxldemo.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_run"
+        style="@style/Main_Item_Text"
+        android:text="f1-跑马灯-移动Toast-组合开关-抖动"
+        />
+    <TextView
+        android:id="@+id/tv_system"
+        style="@style/Main_Item_Text"
+        android:text="f2-android系统-电话-仿软键盘Dialog" />
+    <TextView
+        android:id="@+id/tv_video"
+        style="@style/Main_Item_Text"
+        android:text="f3-视频播放"/>
+    <TextView
+        android:id="@+id/tv_viewpager"
+        style="@style/Main_Item_Text"
+        android:text="f4-viewPager加点-侧拉菜单"/>
+    <TextView
+        android:id="@+id/tv_gride"
+        style="@style/Main_Item_Text"
+        android:text="f5-自定义可以拖拽Button"/>
+</LinearLayout>

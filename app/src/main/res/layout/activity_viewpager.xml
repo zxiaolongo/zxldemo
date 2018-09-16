@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawlayout">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <RelativeLayout
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!--放置多个灰色点的容器,点在其中水平排列,通过java代码动态添加-->
+            <LinearLayout
+                android:id="@+id/ll_dot_container"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/iv_dot_red"
+                android:background="@drawable/shape_red_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <!-- 左侧侧滑菜单 -->
+    <LinearLayout
+        android:id="@+id/navigation_drawer"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:background="@color/color_main_item_text"
+        android:orientation="vertical"
+        android:layout_gravity="start">
+            <TextView
+                android:id="@+id/tv_rotatepager"
+                android:text="RotatePager"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_depthpager"
+                android:text="DepthPager"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_zoomoutpager"
+                android:text="ZoomOutPager"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

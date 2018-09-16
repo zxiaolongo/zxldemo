@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <com.demo.zxl.user.zxldemo.widgit.SettingItemView
+        android:id="@+id/siv_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundType="first"
+        app:siv_text="监听电话"
+        app:siv_isToggleOn="true"
+        app:siv_isShowToggle="true"/>
+
+    <com.demo.zxl.user.zxldemo.widgit.SettingItemView
+        android:id="@+id/siv_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundType="last"
+        app:siv_text="仿软键盘弹出Dialog"
+        app:siv_isToggleOn="false"
+        app:siv_isShowToggle="true"/>
+
+
+
+    
+</LinearLayout>

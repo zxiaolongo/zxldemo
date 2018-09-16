@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Customize your theme here.界面切换动画 -->
+        <item name="android:windowAnimationStyle">@style/animfade</item>
+    </style>
+
+
+    <!-- 界面切换动画 -->
+    <style name="animfade" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_form_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_to_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_to_right</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_form_left</item>
+    </style>
+
+
+    <!-- main界面textView -->
+    <style name="Main_Item_Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textColor">@color/color_main_item_text</item>
+        <item name="android:background">@drawable/main_item_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+
+    </style>
+
+    <!-- f2界面自定义仿对话框dialog样式 -->
+    <style name="MyDialogStyle" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowAnimationStyle">@style/customerAnimation</item>
+    </style>
+
+    <!--输入法的进入和弹出效果,给对话框使用-->
+    <style name="customerAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <!--输入法的水平方向进入和弹出效果,给冒泡窗体使用-->
+    <style name="customerPopupAnimation">
+        <item name="android:windowEnterAnimation">@anim/popup_window_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_window_exit</item>
+    </style>
+</resources>

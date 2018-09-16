@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--declare-styleable 通过这个标签来声明自定义属性 name 的值 跟类名一样-->
+    <declare-styleable name="SettingItemView">
+        <!--设置背景的属性 枚举类型 只能从 first middle last中选择一个-->
+        <attr name="backgroundType">
+            <!-- Can return any CharSequence, possibly a
+             Spanned one if the source text was Spanned. -->
+            <enum name="first" value="0" />
+            <!-- Can only return Spannable. -->
+            <enum name="middle" value="1" />
+            <!-- Can only return Spannable and Editable. -->
+            <enum name="last" value="2" />
+        </attr>
+        <!--用来设置 文字内容-->
+        <attr name="siv_text" format="string" />
+        <!--用来设置 开关按钮的开关状态  true 打开 false 关闭-->
+        <attr name="siv_isToggleOn" format="boolean" />
+        <!--用来设置 是否显示开关按钮 true显示 false不显示-->
+        <attr name="siv_isShowToggle" format="boolean" />
+
+    </declare-styleable>
+</resources>

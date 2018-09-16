@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.demo.zxl.user.zxldemo.widgit.FocusedTextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        android:textColor="#f00"
+        android:text="who are you ? who are you ? ha?"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusableInTouchMode="true"
+        />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+    <com.demo.zxl.user.zxldemo.widgit.SettingItemView
+        android:id="@+id/siv_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundType="first"
+        app:siv_text="组合开关上"
+        app:siv_isToggleOn="true"
+        app:siv_isShowToggle="true"/>
+    <com.demo.zxl.user.zxldemo.widgit.SettingItemView
+        android:id="@+id/siv_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundType="middle"
+        app:siv_text="组合开关中"
+        app:siv_isToggleOn="true"
+        app:siv_isShowToggle="true"/>
+    <com.demo.zxl.user.zxldemo.widgit.SettingItemView
+        android:id="@+id/siv_last"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundType="last"
+        app:siv_text="组合开关下"
+        app:siv_isShowToggle="false"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <EditText
+        android:id="@+id/et_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入要查询内容"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittext_bg" />
+    <Button
+        android:id="@+id/btn_commit"
+        android:text="commit"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
