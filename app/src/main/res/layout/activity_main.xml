@@ -28,4 +28,8 @@
         android:id="@+id/tv_gride"
         style="@style/Main_Item_Text"
         android:text="f5-自定义可以拖拽Button"/>
+    <TextView
+        android:id="@+id/tv_qq_ui"
+        style="@style/Main_Item_Text"
+        android:text="f6-QQUI侧拉ViewDrager"/>
 </LinearLayout>
