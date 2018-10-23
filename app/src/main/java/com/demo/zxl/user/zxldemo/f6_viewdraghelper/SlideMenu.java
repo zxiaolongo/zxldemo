@@ -220,6 +220,8 @@ public class SlideMenu extends FrameLayout {
         if(background!=null){
             int evaluate = (int) argbEvaluator.evaluate(fraction, Color.BLACK, Color.TRANSPARENT);
             background.setColorFilter(evaluate, PorterDuff.Mode.SRC_OVER);
+            //https://blog.csdn.net/anhenzhufeng/article/details/45972155
+            //PorterDuff.Mode.SRC_OVER 各种模式和显示效果
         }
     }
     // Scroller scroller = new Scroller(getContext());
