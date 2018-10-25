@@ -32,4 +32,8 @@
         android:id="@+id/tv_qq_ui"
         style="@style/Main_Item_Text"
         android:text="f6-QQUI侧拉ViewDrager"/>
+    <TextView
+        android:id="@+id/tv_qq_swipelayout"
+        style="@style/Main_Item_Text"
+        android:text="f7-QQUI侧滑删除"/>
 </LinearLayout>

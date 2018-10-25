@@ -35,6 +35,7 @@
         <activity android:name=".f4_viewpager.ViewPagerActivity"/>
         <activity android:name=".f5_gridlayout.GridActivity"/>
         <activity android:name=".f6_viewdraghelper.QQUI_Activity"/>
+        <activity android:name=".f7_swipelayout.SwipeLayoutActivity"/>
     </application>
 
 </manifest>

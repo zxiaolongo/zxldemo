@@ -12,6 +12,7 @@ import com.demo.zxl.user.zxldemo.f3_video.VideoAvtivity;
 import com.demo.zxl.user.zxldemo.f5_gridlayout.GridActivity;
 import com.demo.zxl.user.zxldemo.f4_viewpager.ViewPagerActivity;
 import com.demo.zxl.user.zxldemo.f6_viewdraghelper.QQUI_Activity;
+import com.demo.zxl.user.zxldemo.f7_swipelayout.SwipeLayoutActivity;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
@@ -25,6 +26,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         findViewById(R.id.tv_viewpager).setOnClickListener(this);
         findViewById(R.id.tv_gride).setOnClickListener(this);
         findViewById(R.id.tv_qq_ui).setOnClickListener(this);
+        findViewById(R.id.tv_qq_swipelayout).setOnClickListener(this);
 
     }
 
@@ -59,6 +61,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             case R.id.tv_qq_ui:
                 Intent intent6 = new Intent(this, QQUI_Activity.class);
                 startActivity(intent6);
+                break;
+            case R.id.tv_qq_swipelayout:
+                Intent intent7 = new Intent(this, SwipeLayoutActivity.class);
+                startActivity(intent7);
                 break;
 
         }
