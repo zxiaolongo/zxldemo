@@ -36,4 +36,8 @@
         android:id="@+id/tv_qq_swipelayout"
         style="@style/Main_Item_Text"
         android:text="f7-QQUI侧滑删除"/>
+    <TextView
+        android:id="@+id/tv_flowLayout"
+        style="@style/Main_Item_Text"
+        android:text="f8-Flowlayout自动排列TextView填满"/>
 </LinearLayout>

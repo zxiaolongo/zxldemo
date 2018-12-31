@@ -36,6 +36,7 @@
         <activity android:name=".f5_gridlayout.GridActivity"/>
         <activity android:name=".f6_viewdraghelper.QQUI_Activity"/>
         <activity android:name=".f7_swipelayout.SwipeLayoutActivity"/>
+        <activity android:name=".f8_flowLayout.FlowLayoutActivity"/>
     </application>
 
 </manifest>

@@ -13,6 +13,7 @@ import com.demo.zxl.user.zxldemo.f5_gridlayout.GridActivity;
 import com.demo.zxl.user.zxldemo.f4_viewpager.ViewPagerActivity;
 import com.demo.zxl.user.zxldemo.f6_viewdraghelper.QQUI_Activity;
 import com.demo.zxl.user.zxldemo.f7_swipelayout.SwipeLayoutActivity;
+import com.demo.zxl.user.zxldemo.f8_flowLayout.FlowLayoutActivity;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
@@ -27,6 +28,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         findViewById(R.id.tv_gride).setOnClickListener(this);
         findViewById(R.id.tv_qq_ui).setOnClickListener(this);
         findViewById(R.id.tv_qq_swipelayout).setOnClickListener(this);
+        findViewById(R.id.tv_flowLayout).setOnClickListener(this);
 
     }
 
@@ -65,6 +67,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             case R.id.tv_qq_swipelayout:
                 Intent intent7 = new Intent(this, SwipeLayoutActivity.class);
                 startActivity(intent7);
+                break;
+            case R.id.tv_flowLayout:
+                Intent intent8 = new Intent(this, FlowLayoutActivity.class);
+                startActivity(intent8);
                 break;
 
         }
