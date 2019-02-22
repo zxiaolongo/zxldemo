@@ -102,7 +102,6 @@ public class FlowLayout extends ViewGroup{
 			totalHeight += line.lineHeight;
 		}
 		totalHeight += (lineList.size()-1)*VERTICALSPACING;
-		totalHeight += getPaddingBottom()+getPaddingTop();
 
 		//要此自定义控件,安装计算的高度显示
 		widthMeasureSpec = MeasureSpec.makeMeasureSpec(widthSize,MeasureSpec.EXACTLY);
