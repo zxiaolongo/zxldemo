@@ -2,16 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.demo.zxl.user.zxldemo">
 
-    <!--1 自定义吐司的时候 布局的参数的类型 TYPE_PRIORITY_PHONE 需要这个权限-->
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <!-- 1 自定义吐司的时候 布局的参数的类型 TYPE_PRIORITY_PHONE 需要这个权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
-    <!--2 SD卡权限-->
+    <!-- 2 SD卡权限 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <!--通过telephonyManager 监听电话状态的时候 需要这个权限-->
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-    <!--收到外拨电话广播的权限-->
-    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
-
+    <!-- 通过telephonyManager 监听电话状态的时候 需要这个权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 收到外拨电话广播的权限 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
 
     <application
         android:name=".global.MyApp"
@@ -28,15 +27,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".f1_run.toast.RunActivity"/>
-        <activity android:name=".f2_system.SystemActivity"/>
-        <activity android:name=".f3_video.VideoAvtivity"/>
-        <activity android:name=".f4_viewpager.ViewPagerActivity"/>
-        <activity android:name=".f5_gridlayout.GridActivity"/>
-        <activity android:name=".f6_viewdraghelper.QQUI_Activity"/>
-        <activity android:name=".f7_swipelayout.SwipeLayoutActivity"/>
-        <activity android:name=".f8_flowLayout.FlowLayoutActivity"/>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".f1_run.toast.RunActivity" />
+        <activity android:name=".f2_system.SystemActivity" />
+        <activity android:name=".f3_video.VideoAvtivity" />
+        <activity android:name=".f4_viewpager.ViewPagerActivity" />
+        <activity android:name=".f5_gridlayout.GridActivity" />
+        <activity android:name=".f6_viewdraghelper.QQUI_Activity" />
+        <activity android:name=".f7_swipelayout.SwipeLayoutActivity" />
+        <activity android:name=".f8_flowLayout.FlowLayoutActivity" />
+        <activity android:name=".f9_randomlayout.RandomLayoutActivity"></activity>
     </application>
 
 </manifest>
