@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.demo.zxl.user.zxldemo.f10_sra.RSAActivity;
 import com.demo.zxl.user.zxldemo.f1_run.toast.RunActivity;
 import com.demo.zxl.user.zxldemo.base.BaseActivity;
 import com.demo.zxl.user.zxldemo.base.BasePresenter;
@@ -31,7 +32,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         findViewById(R.id.tv_qq_swipelayout).setOnClickListener(this);
         findViewById(R.id.tv_flowLayout).setOnClickListener(this);
         findViewById(R.id.tv_randomLayout).setOnClickListener(this);
-
+        findViewById(R.id.tv_sra).setOnClickListener(this);
     }
 
     @Override
@@ -77,6 +78,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             case R.id.tv_randomLayout:
                 Intent intent9 = new Intent(this, RandomLayoutActivity.class);
                 startActivity(intent9);
+                break;
+            case R.id.tv_sra:
+                Intent intent10 = new Intent(this, RSAActivity.class);
+                startActivity(intent10);
                 break;
 
         }

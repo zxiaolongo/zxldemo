@@ -36,7 +36,8 @@
         <activity android:name=".f6_viewdraghelper.QQUI_Activity" />
         <activity android:name=".f7_swipelayout.SwipeLayoutActivity" />
         <activity android:name=".f8_flowLayout.FlowLayoutActivity" />
-        <activity android:name=".f9_randomlayout.RandomLayoutActivity"></activity>
+        <activity android:name=".f9_randomlayout.RandomLayoutActivity"/>
+        <activity android:name=".f10_sra.RSAActivity"/>
     </application>
 
 </manifest>

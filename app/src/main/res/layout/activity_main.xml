@@ -44,4 +44,8 @@
         android:id="@+id/tv_randomLayout"
         style="@style/Main_Item_Text"
         android:text="f9-randomLayout手势划出一组一组Text"/>
+    <TextView
+        android:id="@+id/tv_sra"
+        style="@style/Main_Item_Text"
+        android:text="f10-RSA加密解密(非对称加解密)"/>
 </LinearLayout>
